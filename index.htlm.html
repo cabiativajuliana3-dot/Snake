@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐍 Snake Arcade Deluxe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>🐍 SNAKE DELUXE</h1>
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+        <div class="score">Puntuación: <span id="score">0</span></div>
+        <div class="high-score">🏆 Récord: <span id="highScore">0</span></div>
+        <div class="controls">Flechas: mover | P: pausa | Espacio: iniciar</div>
+        <div class="speed-control">
+            <label>Velocidad: <span id="speedValue">150</span> ms</label>
+            <input type="range" id="speedSlider" min="50" max="300" value="150" step="10">
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
